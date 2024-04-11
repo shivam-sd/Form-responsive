@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(rgba(0.75, 0.79, 0.79, 0.75), rgba(0.75, 0.79, 0.79, 0.75)), url("./images/banner-img.jpg") center/cover no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.map-class iframe{
+    width: 100%;
+    height: 45%;
+    border: 5px solid red;
+    margin-top: 260px;
+}
+.map-class{
+    width: 250px;
+    height: 500px;
+    flex-wrap: wrap;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    /* border: 5px solid black; */
+    /* margin-left: 10px; */
+}
+
+@media(max-width:610px){
+    .map-class{
+            width: 700px;
+            height: 250px;
+            margin-top: 350px;
+            margin-right: 100px;
+        }
+    }
+
+/* @media(max-width:600px) {
+    .map-class{
+        width: 200px;
+        height: 300px;
+        margin-top: 800px;
+        margin-right: 150px;
+    }
+    
+} */
+@media(max-width:400px){
+    .map-class{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 45%;    
+        position: relative;
+        top: 600px;
+        right: 140px;
+    }
+}
+
+@media(max-width:590px){
+    .map-class{
+        width: 100%;
+        height: 60%; 
+    }
+}
+.map{
+    border: 10px solid red;
+}
+/* .hero{
+    width:100px;
+    height: 100px;
+    background-color: #666;
+
+} */
+
+.btn-close{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 149px;
+    top: 137px;
+    border-radius: 43%;
+    transition: all 0.2s ease-in;
+}
+
+.btn-close:hover{
+    opacity: 0.7;
+    background: lightgray;
+}
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+input.contact-inputs {
+    background: linear-gradient(45deg, #871e1e, transparent);
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    color: beige;
+    font-size: 18px;
+    background: linear-gradient(45deg, #871e1e, transparent);
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff4f4f,#fa6d86);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 60vw;
+    }
+    .contact-right{
+        display: none;
+    }
+   
+    .btn-close{
+        
+        right:35px;
+        top: 30px;
+    }
+   /* .map-class iframe {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 20rem !important; */
+
+   
+   }
+
+
+@media only screen and (min-width:711px) and (max-width:1200px){
+    .btn-close{
+        right: 25px;
+        top: 126px;
+    }
+    
+}
+/* @media (max-width:600px) {
+    .map-class {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 400px;
+        margin-left: 50px;
+        height: 40vh; /* modified */
+        /* width: 100%;modified */
+
+     */
+
+    .contact-form-container {
+        grid-column: 1 / 2;
+        width: 100%; /* modified */
+    }
